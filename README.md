@@ -7,54 +7,21 @@
 - http://localhost:8000
 
 
-#### Expectation
+#### How to Run Unit Test
 ---
-This at-home coding challenge is an opportunity for you to write some clean code that shows us how you use data structures to solve algorithmic problems.
-- Write code as if you were shipping it: Assume you are going to be code reviewed, articulate a test plan, etc.
-- We expect this solution to be written with React.
-- Use your preferred IDE or editor and whatever tooling you're comfortable with.
-- Feel free to use whatever references you'd like, including Google.
-- Your solution does not have to persist data between runs.
-- When you’re finished, make sure your code is committed to the repo with instructions on how to run it.
-- Your solution should be self-contained and not assume other software is already installed (npm install is ok).
-- Got an idea for a cool feature to add? Do it! We love seeing your creative side.
+- run `npm ci` if node_modules doesn't exist yet
+- run `npm test`
 
+#### Deliverables
+- A user could add, remove item to the shopping cart, update the quantity of items in the cart, and see the subtotal, tax, delivery amount and total amount
+- Add a small badge at the top right corner of the 'Cart' text, which indicates how many items (not quantity) are currently in the cart
+- Add basic setup for jest and some unit tests
 
-#### Problem Statement
+#### Additional Thoughs/Comments
 ---
-Create a simple single page shopping cart web app.
+- Overall my free time these days is less I thought but I tried to speed up on this 
+- As mentioend in the requirement I didn't do much styling for the exercise. But given design & time I'm pretty confident of my css skills for implementing pixel-perfect mockup
+- The unit tests I added is to show how and where I normally write tests. Not to indicate these are the only tests needed for the application
+- I'm aware that some of the things is not opted to the best. Like normally I'd use `combineReducers` to construct the final reducers with smaller reducers, and I know normally it's not a good practice to define anonymous function as props. But given the time and scale of this exercise I decided not to focus on those and leave those to discussion if needed.
 
-Managing the shopping cart requires adding and removing products to the cart, calculating subtotals, shipping, taxes, and applying discounts.
-
-Specifically we would like to see these elements represented in the cart:
-- PRODUCT NAME
-- PRODUCT PRICE
-- PRODUCT QUANTITY
-- SUBTOTAL (does not include TAX or SHIPPING COST)
-- TAX (@10%)
-- SHIPPING COST ($50 + 2%) - ($5 * TOTAL QUANTITY) 
-- TOTAL COST
-
-We will NOT evaluate UI interface so much as the behavior and state management.  It should be usable, but it does not need to be pretty.  This is to test your ability to use and manage React.  However, you should be prepared to discuss the UI and what style changes could improve the interface.
-
-The interface should allow a user to;
-- ADD an item to the shopping cart.
-- REMOVE items from the shopping cart.
-- UPDATE the quantity of items in the cart.
-- SHOW the Subtotal.
-- SHOW the Tax amount.
-- SHOW the Delivery amount.
-- SHOW the Total.
-
-
-#### SUBMISSION
----
-- Clone this repository.  Do NOT fork it.
-- Create the Cart as assigned/outlined above.
-- Gatsby, React, and Foundation Grid have already been included.
-- You can assume the cart will not need to handle more than 10 of each product.
-- Add documentation needed to install any packages, run the tests and code to this README or replace this README with one of your own with information on how to install and run code and tests.
-- Add your code to a github repository, share it with us or make it public, AND let us know (inviting someone to join a github project does not send a notification)
-
-
-#### Good luck!
+#### Thank you!
